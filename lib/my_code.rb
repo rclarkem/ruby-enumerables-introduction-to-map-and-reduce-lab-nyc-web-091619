@@ -30,3 +30,11 @@ newArr << source_array[index].pow(2)
 }
 newArr
 end
+
+def reduce_to_total(source_array, starting_point = 0)
+sum = starting_point
+source_array.length.times { |index|
+sum += source_array[index]
+}
+sum
+end
