@@ -13,3 +13,12 @@ source_array.length.times do |index|
 end
 newArr
 end
+
+
+def map_to_double(source_array)
+newArr = []
+source_array.length.times { |index|
+newArr << source_array[index] * 2
+}
+newArr
+end
