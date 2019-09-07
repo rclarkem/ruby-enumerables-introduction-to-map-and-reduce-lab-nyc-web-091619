@@ -22,3 +22,11 @@ newArr << source_array[index] * 2
 }
 newArr
 end
+
+def map_to_square(source_array)
+newArr = []
+source_array.length.times { |index|
+newArr << source_array[index].pow(2)
+}
+newArr
+end
