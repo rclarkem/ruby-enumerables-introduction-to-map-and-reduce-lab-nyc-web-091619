@@ -43,8 +43,13 @@ end
 def reduce_to_all_true(source_array)
   newArr = []
   source_array.length.times { |index|
-  !!source_array[index] ? newArr << source_array[index] : false
+  if !!source_array[index]
+   newArr << source_array[index] 
+   else 
+   return false
+   end
   # p source_array[index]
   }
   newArr
   end
+  
