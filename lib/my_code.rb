@@ -40,7 +40,7 @@ sum
 end
 
 
-def reduce_to_all(source_array)
+def reduce_to_all_true(source_array)
 newArr = []
 source_array.length.times { |index|
 !!source_array[index] ? newArr << source_array[index] : false
